@@ -1,0 +1,115 @@
+body{
+    /* background-image: url(https://images.pexels.com/photos/2950003/pexels-photo-2950003.jpeg?auto=compress&cs=tinysrgb&w=600); */
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height:100vh;
+}
+.container{
+    flex:1;
+}
+.navbar{
+    height:5 rem;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction:  row;
+    background-color:rgb(251, 249, 249);
+}
+
+.fa-compass{
+    font-size: 2rem;
+    color:#fe424d;
+}
+.nav-link{
+    color:#222222 !important; 
+}
+
+/*Footer*/
+
+.f-info-links a{
+    text-decoration: none;
+    color:#222222;
+    
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+    
+}
+.f-info{
+    height: 4rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.font-info-socials{
+    font-size:1.2rem;
+    margin-right: 2rem !important;
+    padding-right: 2rem;
+}
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    object-fit: cover !important;
+    width: 100% !important;
+}
+.card-body{
+    padding: 0 !important;
+}
+.card-text p{
+    font-weight: 400;
+}
+.listing-link{
+    text-decoration: none;
+}
+/* .card-img-overlay{
+    opacity: 0;
+} */
+/* .card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+} */
+.card-img-overlay button{
+    text-decoration: none;
+    border-radius: 2rem;
+    background-color: color;
+    color: black;
+    border: none;
+}
+ 
+
+/* New page */
+.add-btn, .edit-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+
+/* Show page */
+.show-img{
+    height: 30vh;
+}
+.btns{
+    display: flex;
+}
+.show-img{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Map */
+#map{
+    height:400px;
+    width:80vh;
+}
