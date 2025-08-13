@@ -113,3 +113,34 @@ body{
     height:400px;
     width:80vh;
 }
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+    .listing-card {
+        margin-bottom: 1.5rem;
+    }
+    .show-img {
+        height: auto;
+        max-height: 250px;
+    }
+    .btns {
+        flex-direction: column;
+    }
+}
+@media (max-width: 480px) {
+    .fa-compass {
+        font-size: 1.5rem;
+    }
+    .font-info-socials {
+        font-size: 1rem;
+        margin-right: 1rem !important;
+        padding-right: 1rem;
+    }
+    #map {
+        height: 250px;
+    }
+}
