@@ -9,7 +9,6 @@
         margin-bottom: 1rem;
         padding-bottom: 5px;
         font-size: 1.3rem !important;
-        
     }
 
     #filters:hover {
@@ -20,12 +19,12 @@
         display: flex;
         align-items: center;
         background: white;
-        border-radius: 50px;
+        border-radius: 49px;
         padding: 8px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         width: fit-content;
         margin: 1.5rem auto 2rem;
-       
+
     }
 
     .search-section {
@@ -65,7 +64,7 @@
         justify-content: center;
     }
 </style>
-<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+<nav class="navbar  navbar-expand-md bg-body-light border-bottom sticky-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="/listings"><i class="fa-solid fa-compass"></i>&nbsp;&nbsp;<span
                 style="color: red;">WanderLust</span></a>
@@ -77,20 +76,17 @@
 
                 <a class="nav-link" href="/listings"><i class="fa-solid fa-house-chimney"></i>&nbsp; Homes</a>
 
-                &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                 <a class="nav-link" href="/listings"><i class="fa-solid fa-person-circle-check"></i>&nbsp;
                     Experiences</a>
 
-                &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a class="nav-link" href="/listings"><i class="fa-solid fa-bell-concierge"></i>&nbsp; Services</a>
             </div>
-            <br><br><br>
-
-
         </div>
         <div class="navbar-nav ms-auto">
-            <a class="nav-link" href="/listings/new">Become a host</a>
+            <a class="nav-link" href="/listings/new"><b>Become a host</b></a>
             <% if(!currUser) { %>
                 <a class="nav-link " href="/signup"><b>Sign Up</b></a>
                 <a class="nav-link" href="/login"><b>Login</b></a>
@@ -106,7 +102,7 @@
 <div class="search-bar">
     <div class="search-section">
         <label>Where</label>
-        <input type="text" placeholder="Search destinations">
+        <input type="text" placeholder="Search Country">
     </div>
     <div class="search-section">
         <label>Check in</label>
@@ -122,3 +118,27 @@
     </div>
     <button class="search-btn">🔍</button>
 </div>
+
+
+
+
+<nav class="navbar navbar-expand-md bg-body-light border-bottom nav2 sticky-top">
+        <div class="container-fluid">
+            <input type="text" placeholder="Start your search">
+        </div>
+        <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup"> -->
+            <div id="filters">
+                <a class="nav-link" href="/listings"><i class="fa-solid fa-house-chimney"></i>&nbsp; Homes</a>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <a class="nav-link" href="/listings"><i class="fa-solid fa-person-circle-check"></i>&nbsp;
+                    Experiences</a>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="nav-link" href="/listings"><i class="fa-solid fa-bell-concierge"></i>&nbsp;Services</a>
+            </div>
+    </div>
+    </div>
+
+</nav>
