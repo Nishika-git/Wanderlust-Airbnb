@@ -138,6 +138,16 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a class="nav-link" href="/listings"><i class="fa-solid fa-bell-concierge"></i>&nbsp;Services</a>
             </div>
+            <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="/listings/new"><b>Become a host</b></a>
+            <% if(!currUser) { %>
+                <a class="nav-link " href="/signup"><b>Sign Up</b></a>
+                <a class="nav-link" href="/login"><b>Login</b></a>
+                <% } %>
+                    <% if(currUser) { %>
+                        <a class="nav-link" href="/logout"><b>Logout</b></a>
+                        <% } %>
+        </div>
     </div>
     </div>
 

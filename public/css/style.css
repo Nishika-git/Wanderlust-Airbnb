@@ -299,3 +299,13 @@ body {
         padding-bottom: 3px !important;
     }
 }
+@media (max-width: 768px){
+    .navbar-nav{
+        padding: 0.8rem;
+        padding-left: 0.8rem !important;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row !important;
+        justify-content: space-between;
+    }
+}
