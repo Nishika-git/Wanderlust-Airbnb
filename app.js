@@ -30,8 +30,11 @@ main()
 });
 
 async function main() {
-  await mongoose.connect(dbUrl);    
+  await mongoose.connect(dbUrl, {
+    tls: true
+  });
 }
+
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
@@ -48,7 +51,7 @@ const store = MongoStore.create({
     touchAfter: 24 * 3600,
 }); 
 
-store.on("error", ()=> {
+store.on("error", (err)=> {
     console.log("ERROR in MONGO SESSION STORE", err);
 });
 
@@ -81,7 +84,7 @@ passport.deserializeUser(User.deserializeUser());
 app.use((req, res, next)=>{
     res.locals.success = req.flash("success");
     res.locals.error = req.flash("error");
-    res.locals.currUser = req.user;
+    res.locals.currUser = req.user || null;
     next();
 });
 
@@ -100,6 +103,7 @@ app.use((err, req, res, next) => {
     // res.status(status).send(message);  
 });
 
-app.listen(8080, ()=>{
-    console.log("server is listening to port 8080");
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, ()=>{
+    console.log(`server is listening to port ${PORT}`);
 });
